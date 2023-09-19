@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Vehicle_Switch" ID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}" PersistMode="Standalone"/>
+	</AudioObjects>
+</WwiseDocument>
