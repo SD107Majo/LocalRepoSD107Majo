@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{24CA86F3-B9E0-414C-93F9-E81BAD9A160D}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Skates" ID="{24CA86F3-B9E0-414C-93F9-E81BAD9A160D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Rollerskates" ID="{85A2C788-F91E-48DB-82E4-9DA05DFE4388}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Rollerskate_Play" ID="{D4CD5458-B59E-4AE6-803A-AF98559E513C}" WorkUnitID="{70BEB5B2-7C29-404A-8D8A-70A247B2CF5F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rollerskate_Stop" ID="{65F09EC8-1B2F-4EDB-AEC4-64B2A45597CF}" WorkUnitID="{70BEB5B2-7C29-404A-8D8A-70A247B2CF5F}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Stop_Skate" ID="{26AD649E-40AD-439C-BF3D-1316928D8FCC}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

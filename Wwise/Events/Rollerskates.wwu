@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{70BEB5B2-7C29-404A-8D8A-70A247B2CF5F}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Rollerskates" ID="{70BEB5B2-7C29-404A-8D8A-70A247B2CF5F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Rollerskate_Play" ID="{D4CD5458-B59E-4AE6-803A-AF98559E513C}">
+					<ChildrenList>
+						<Action Name="" ID="{C3601ED2-0139-495D-8166-1BBFD909B083}" ShortID="973901942">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rollerskates" ID="{F6A8BD81-B79F-4782-AAF8-3579DDF02F7E}" WorkUnitID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rollerskate_Stop" ID="{65F09EC8-1B2F-4EDB-AEC4-64B2A45597CF}">
+					<ChildrenList>
+						<Action Name="" ID="{358878AF-2FCC-4E2F-A04D-B4B25F77A390}" ShortID="1047548036">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rollerskates" ID="{F6A8BD81-B79F-4782-AAF8-3579DDF02F7E}" WorkUnitID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

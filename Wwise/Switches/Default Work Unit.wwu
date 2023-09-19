@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{256E420E-C58F-4D52-9765-C4F9DF61787D}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{256E420E-C58F-4D52-9765-C4F9DF61787D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{256E420E-C58F-4D52-9765-C4F9DF61787D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Rollerskate_Sequence" ID="{E2575270-C7A5-4B34-A0B0-5BE055AFD8B6}">
+					<ChildrenList>
+						<Switch Name="Slow_Skate" ID="{61CDD1F0-15D4-46D9-8F79-F1C22AAA06C7}"/>
+						<Switch Name="Normal_Skate" ID="{5EDAFA94-06D9-47B2-96C5-63AC0BACC569}"/>
+						<Switch Name="Fast_Skate" ID="{B4D4D710-464F-4BFD-AB55-0A7266B4B7AB}"/>
+						<Switch Name="Stop_Skate" ID="{26AD649E-40AD-439C-BF3D-1316928D8FCC}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

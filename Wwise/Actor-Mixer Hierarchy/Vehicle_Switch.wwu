@@ -1,6 +1,473 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Vehicle_Switch" ID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Vehicle_Switch" ID="{F5C216A6-8BFB-49E7-AE8D-4C14D0C17B3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Rollerskates" ID="{F6A8BD81-B79F-4782-AAF8-3579DDF02F7E}" ShortID="494814660">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Slow_Skate" ID="{61CDD1F0-15D4-46D9-8F79-F1C22AAA06C7}" WorkUnitID="{256E420E-C58F-4D52-9765-C4F9DF61787D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Rollerskate_Sequence" ID="{E2575270-C7A5-4B34-A0B0-5BE055AFD8B6}" WorkUnitID="{256E420E-C58F-4D52-9765-C4F9DF61787D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Fast_Skate" ID="{4D082D66-EC85-4048-97D4-FBBEF49BE92F}" ShortID="482409816">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Fast_Skate_01" ID="{106AE1A2-F5F8-43B0-BFAF-F6D1761A6384}" ShortID="648177975">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND67721"/>
+										<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1695091936e07drAHdSEoZDgTdOtV&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND67721/sfy_YsZJyXBqRxyGvMgQLZYlYOxjkzPoja"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="54.63590775785746"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.506"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="192000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.3933333333333333"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.49916666666666665"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150" ID="{B93DE8CD-8A50-4B94-8BD6-9D94DA4E7CE9}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND67721"/>
+												<Property Name="TrimBegin" Type="Real64" Value="21.4901237180906"/>
+												<Property Name="TrimEnd" Type="Real64" Value="27.2724239557972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="617043672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150" ID="{B93DE8CD-8A50-4B94-8BD6-9D94DA4E7CE9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fast_Skate_02" ID="{0BFF9114-9B03-4BA8-801C-6A2666D7414C}" ShortID="979262545">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND67721"/>
+										<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1695091936e07drAHdSEoZDgTdOtV&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND67721/sfy_YsZJyXBqRxyGvMgQLZYlYOxjkzPoja"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="54.63590775785746"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.506"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150 1.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="192000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.49916666666666665"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.6025"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150 1" ID="{9DF33837-EE1A-46BB-AF9E-5E4960E52516}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND67721"/>
+												<Property Name="TrimBegin" Type="Real64" Value="27.2724239557972"/>
+												<Property Name="TrimEnd" Type="Real64" Value="32.9181344241091"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="355005550"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 - Pitch 150 1" ID="{9DF33837-EE1A-46BB-AF9E-5E4960E52516}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Normal_Skate" ID="{84CB7102-171F-4FD1-AA5E-BA70C6B38DEF}" ShortID="55743060">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Normal_Skate_02" ID="{2DAD8BC0-37D2-4D72-A53F-DD6F08769F50}" ShortID="1017185790">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND67721"/>
+										<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1695091936e07drAHdSEoZDgTdOtV&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND67721/sfy_YsZJyXBqRxyGvMgQLZYlYOxjkzPoja"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="44.39929348958333"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 2.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="192000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.09916666666666667"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.175"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 2" ID="{37D9E681-0E79-43A2-B2FC-26B3BE20CB8F}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND67721"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.15959964409722"/>
+												<Property Name="TrimEnd" Type="Real64" Value="14.3992934895833"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="338687660"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 2" ID="{37D9E681-0E79-43A2-B2FC-26B3BE20CB8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Normal_Skate_01" ID="{2AE7BBE6-114A-4DE1-A170-9B81F710DB79}" ShortID="858226977">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND67721"/>
+										<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1695091936e07drAHdSEoZDgTdOtV&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND67721/sfy_YsZJyXBqRxyGvMgQLZYlYOxjkzPoja"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="38.15959964409722"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 1.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="192000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.09916666666666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 1" ID="{00F17B16-7043-4D75-A497-3BAFEC84AB0C}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND67721"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.15959964409722"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="218316524"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerblades, 6 Year Old, Beginner, Street Rolling SND67721 1" ID="{00F17B16-7043-4D75-A497-3BAFEC84AB0C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Slow_Skate" ID="{D5495518-50AB-45CA-A7E8-70464E4F3755}" ShortID="714120424">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Slow_Rollerskate_02" ID="{2049F50D-F560-4003-8590-5B93A08751EF}" ShortID="701626824">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND38553"/>
+										<Property Name="Soundly:FileName" Type="string" Value="C:\Users\SD107M~1\AppData\Local\Temp\tmpqxov1rw3\afcache\1426367345Ff4sxqvM_wkFwGSND38553sfy.sfy"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="3.0286809569685293"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="0.519"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 02 SND38553 - Pitch 51.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.18"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.84"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 02 SND38553 - Pitch 51" ID="{3B240246-AFE8-4E0D-98A7-D06A05F886C9}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND38553"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.545162572254335"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.54409200385356"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 02 SND38553 - Pitch 51.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="924794842"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 02 SND38553 - Pitch 51" ID="{3B240246-AFE8-4E0D-98A7-D06A05F886C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Slow_Rollerskate" ID="{ED5BBBCC-B628-4024-99ED-2C05BC441723}" ShortID="925848574">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="SND38554"/>
+										<Property Name="Soundly:FileName" Type="string" Value="C:\Users\SD107M~1\AppData\Local\Temp\tmpqxov1rw3\afcache\1426367345Ff4sxqvM_wkFwGSND38554sfy.sfy"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="2.307209321475626"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="0.506"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 01 SND38554 - Pitch 50.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 01 SND38554 - Pitch 50" ID="{83830F29-8378-4023-8525-2DF5BAE02CE0}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND38554"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 01 SND38554 - Pitch 50.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="571680293"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sports, Skate, Rollerskate, Rollerblades, Short Roll On Wooden Deck 01 SND38554 - Pitch 50" ID="{83830F29-8378-4023-8525-2DF5BAE02CE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stop_Skate" ID="{F534CB21-6DF5-4674-AF86-96BD3877359A}" ShortID="811777448">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Stop_Skate_02" ID="{8E37906B-5B97-4DC2-B292-A9298678EEAA}" ShortID="568328904">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="1636323311GcxU-CCFEtdPTW"/>
+										<Property Name="Soundly:FileName" Type="string" Value="C:\Users\SD107M~1\AppData\Local\Temp\tmpqxov1rw3\afcache\1633725636InNHRmRgo_a0ow1636323311GcxU-CCFEtdPTWsfy.sfy"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="2.3035493827160494"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1633725636InNHRmRgo_a0ow"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="0.81"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Rollerblade_Stops_Scrape_02 - Pitch 81.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.1725"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.6741666666666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rollerblade_Stops_Scrape_02 - Pitch 81" ID="{185C047D-ED6B-4CEA-B212-7E0D33DC699C}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="1636323311GcxU-CCFEtdPTW"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.397362268518518"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.55297620884774"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Rollerblade_Stops_Scrape_02 - Pitch 81.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="639747357"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rollerblade_Stops_Scrape_02 - Pitch 81" ID="{185C047D-ED6B-4CEA-B212-7E0D33DC699C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stop_Skate_01" ID="{AAB9FBF3-5973-4E70-BDA2-11A56C39C33F}" ShortID="998661918">
+									<PropertyList>
+										<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+										<Property Name="Soundly:FileID" Type="string" Value="1636323314EkPsXijmt1VA3D"/>
+										<Property Name="Soundly:FileName" Type="string" Value="C:\Users\SD107M~1\AppData\Local\Temp\tmpqxov1rw3\afcache\1633725636InNHRmRgo_a0ow1636323314EkPsXijmt1VA3Dsfy.sfy"/>
+										<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+										<Property Name="Soundly:HandleStopTime" Type="string" Value="2.7709599027946537"/>
+										<Property Name="Soundly:LibraryID" Type="string" Value="1633725636InNHRmRgo_a0ow"/>
+										<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+										<Property Name="Soundly:PlaybackSpeed" Type="string" Value="0.823"/>
+										<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+										<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+										<Property Name="Soundly:RenderedFilePath" Type="string" Value="H:\Soundly Audio\Rollerblade_Stops_Scrape_01 - Pitch 82.wav"/>
+										<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+										<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.185"/>
+										<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.695"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3E2E5BE-7256-4035-93A0-301D81C2F5BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCB25A92-5E65-4F29-BBE5-497A40B73D53}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rollerblade_Stops_Scrape_01 - Pitch 82" ID="{0ED1B973-1BB2-4186-B981-A8D90D3083F5}">
+											<PropertyList>
+												<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="1636323314EkPsXijmt1VA3D"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.512627582017011"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.92581713244228"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Soundly Audio\Rollerblade_Stops_Scrape_01 - Pitch 82.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="942970144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rollerblade_Stops_Scrape_01 - Pitch 82" ID="{0ED1B973-1BB2-4186-B981-A8D90D3083F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Normal_Skate" ID="{84CB7102-171F-4FD1-AA5E-BA70C6B38DEF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Slow_Skate" ID="{D5495518-50AB-45CA-A7E8-70464E4F3755}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Stop_Skate" ID="{F534CB21-6DF5-4674-AF86-96BD3877359A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Fast_Skate" ID="{4D082D66-EC85-4048-97D4-FBBEF49BE92F}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Fast_Skate" ID="{B4D4D710-464F-4BFD-AB55-0A7266B4B7AB}"/>
+								<ItemList>
+									<ItemRef Name="Fast_Skate" ID="{4D082D66-EC85-4048-97D4-FBBEF49BE92F}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Normal_Skate" ID="{5EDAFA94-06D9-47B2-96C5-63AC0BACC569}"/>
+								<ItemList>
+									<ItemRef Name="Normal_Skate" ID="{84CB7102-171F-4FD1-AA5E-BA70C6B38DEF}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Stop_Skate" ID="{26AD649E-40AD-439C-BF3D-1316928D8FCC}"/>
+								<ItemList>
+									<ItemRef Name="Stop_Skate" ID="{F534CB21-6DF5-4674-AF86-96BD3877359A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Slow_Skate" ID="{61CDD1F0-15D4-46D9-8F79-F1C22AAA06C7}"/>
+								<ItemList>
+									<ItemRef Name="Slow_Skate" ID="{D5495518-50AB-45CA-A7E8-70464E4F3755}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
