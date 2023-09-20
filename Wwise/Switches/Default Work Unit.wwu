@@ -4,12 +4,55 @@
 		<WorkUnit Name="Default Work Unit" ID="{256E420E-C58F-4D52-9765-C4F9DF61787D}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Rollerskate_Sequence" ID="{E2575270-C7A5-4B34-A0B0-5BE055AFD8B6}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Slow_Skate" ID="{61CDD1F0-15D4-46D9-8F79-F1C22AAA06C7}"/>
 						<Switch Name="Normal_Skate" ID="{5EDAFA94-06D9-47B2-96C5-63AC0BACC569}"/>
 						<Switch Name="Fast_Skate" ID="{B4D4D710-464F-4BFD-AB55-0A7266B4B7AB}"/>
 						<Switch Name="Stop_Skate" ID="{26AD649E-40AD-439C-BF3D-1316928D8FCC}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Skates" ID="{A9723C04-0B14-43A0-877E-30780E6C4D67}"/>
+						<Curve Name="" ID="{EB9098C1-057B-4F39-9ABA-DCD933E7C354}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.14936</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.34904</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.35004</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.50676</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BBD78881-A518-4897-A283-CFF66D7FFEC3}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{BBD78881-A518-4897-A283-CFF66D7FFEC3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BBD78881-A518-4897-A283-CFF66D7FFEC3}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Skates" ID="{A9723C04-0B14-43A0-877E-30780E6C4D67}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
